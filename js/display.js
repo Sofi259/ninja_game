@@ -29,6 +29,7 @@ class World {
 		else if ((player.ejeY + player.height) > this.canvas.height) {
 			player.ejeY = this.canvas.height - this.player.height
 			player.velocity_y = 0
+			player.jumping = false
 		}
 	}
 	update() {
@@ -39,7 +40,53 @@ class World {
 		this.player.velocity_x *= this.friction
 		this.player.velocity_y *= this.friction
 		this.playerCollision(this.player)
-		this.ctx.fillStyle = 'black'
-		this.ctx.fillRect(this.player.ejeX, this.player.ejeY, this.player.width, this.player.height)
+
+
+		let AfsIndex = this.player.actualAnimationFrameSet[0]
+		let aFrame = this.player.animationFrames[AfsIndex]
+		let sx = aFrame.x
+		let sy = aFrame.y
+		let sFrameSize = 24
+		let dx = this.player.ejeX
+		let dy = this.player.ejeY
+		this.ctx.drawImage(this.player.animationImage, sx, sy, sFrameSize, sFrameSize, dx, dy, sFrameSize*3, sFrameSize*3) // estoy tratando de modificar el spritesheet, lo pude agrandar que es el "blue-spritesheet-export" pero cuando lo pongo acá no me lo toma por algun motivo
 	}
-}
+
+// TODAVIA NO LAS PUDE HACER ANDAR - ES PARA HACER LA ANIMACION
+
+// 	animator(animationFrameSet, delay) {
+// 	  this.count = 0
+// 	  this.delay = (delay >= 1) ? delay : 1
+// 	  this.animationFrameSet = animationFrameSet
+// 	  this.frameIndex = 0
+// 	  this.frameValue = animationFrameSet[0]
+// 	  this.mode = "pause"
+// 	}
+// 	animate() {
+// 		switch(this.mode) {
+// 			case "loop" : this.loop()
+// 			break;
+// 			case "pause" :
+// 			break;
+// 		}
+// 	}
+// 	changeFrameSet(animationFrameSet, mode, delay = 10, frameIndex = 0) {
+// 		if(this.animationFrameSet === animationFrameSet) { return; }
+
+// 		this.count = 0
+// 	  	this.delay = delay
+// 	  	this.animationFrameSet = animationFrameSet
+// 	  	this.frameIndex = frameIndex
+// 	  	this.frameValue = frameValue[frameIndex]
+// 	  	this.mode = mode
+// 	}
+// 	loop() {
+// 		this.count ++
+
+// 		while(this.count > this.delay) {
+// 			this.count -= this.delay
+// 			this.frameIndex = (this.frameIndex < this.animationFrameSet.length - 1) ? this.frameIndex + 1 : 0
+// 			this.frameValue = this.animationFrameSet[this.frameIndex]
+// 		}
+// 	}
+// }
