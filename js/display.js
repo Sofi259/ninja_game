@@ -46,10 +46,10 @@ class World {
 		let aFrame = this.player.animationFrames[AfsIndex]
 		let sx = aFrame.x
 		let sy = aFrame.y
-		let sFrameSize = 24
+		let sFrameSize = 72
 		let dx = this.player.ejeX
 		let dy = this.player.ejeY
-		this.ctx.drawImage(this.player.animationImage, sx, sy, sFrameSize, sFrameSize, dx, dy, sFrameSize*3, sFrameSize*3) // estoy tratando de modificar el spritesheet, lo pude agrandar que es el "blue-spritesheet-export" pero cuando lo pongo acá no me lo toma por algun motivo
+		this.ctx.drawImage(this.player.animationImage, sx, sy, sFrameSize, sFrameSize, dx, dy, sFrameSize, sFrameSize)
 	}
 
 // TODAVIA NO LAS PUDE HACER ANDAR - ES PARA HACER LA ANIMACION
@@ -89,4 +89,4 @@ class World {
 // 			this.frameValue = this.animationFrameSet[this.frameIndex]
 // 		}
 // 	}
-// }
+}
