@@ -90,3 +90,45 @@ class World {
 // 		}
 // 	}
 }
+
+Swal.fire({
+  titleText: '¡Saca ese ninja interior!',
+  imageUrl: 'assets/estrellas_ninja_perder.png',
+  color: '#00000',
+  width: '350px',
+  imageWidth: 250,
+  imageHeight: 80,
+  imageAlt: 'stars',
+  showCloseButton: false,
+  showCancelButton: true,
+  focusConfirm: false,
+  confirmButtonColor: '#4d44b0',
+  cancelButtonColor: '#4d44b0',
+  confirmButtonText:
+    '<i class="fa fa-thumbs-up"></i> Reintentar',
+  confirmButtonAriaLabel: 'reintentar',
+  cancelButtonText:
+    '<i class="fa fa-thumbs-down"></i> Siguiente', //no se como poner los iconos y no lo explica en ningun lado... en realidad les pondría iconos a los botones y no palabras
+  cancelButtonAriaLabel: 'siguienteNivel'
+})
+
+Swal.fire({
+  titleText: '¡Eso es!',
+  imageUrl: 'assets/estrellas_ninja_ganar.png',
+  color: '#00000',
+  width: '350px',
+  imageWidth: 300,
+  imageHeight: 180,
+  imageAlt: 'stars',
+  showCloseButton: false,
+  showCancelButton: true,
+  focusConfirm: false,
+  confirmButtonColor: 'rgb(33, 21, 170)',
+  cancelButtonColor: 'rgb(33, 21, 170)',
+  confirmButtonText:
+    '<i class="fa fa-thumbs-up"></i> Reintentar',
+  confirmButtonAriaLabel: 'reintentar',
+  cancelButtonText:
+    '<i class="fa fa-thumbs-down"></i> Siguiente',
+  cancelButtonAriaLabel: 'siguienteNivel'
+})
