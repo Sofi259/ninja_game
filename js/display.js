@@ -33,16 +33,21 @@ class World {
 		}
 	}
 	update() {
+		//limpiar pantalla
 		this.ctx.clearRect(0,0, this.canvas.width, this.canvas.height)
+
+		//carga nivel
 		this.loadLevel()
+
+		//player
 		this.player.velocity_y += this.gravity
 		this.player.update()
 		this.player.velocity_x *= this.friction
 		this.player.velocity_y *= this.friction
 		this.playerCollision(this.player)
 
-
-		let AfsIndex = this.player.actualAnimationFrameSet[0]
+		//animaciones
+		let AfsIndex = this.player.actualAnimationFrameValue
 		let aFrame = this.player.animationFrames[AfsIndex]
 		let sx = aFrame.x
 		let sy = aFrame.y
@@ -51,9 +56,6 @@ class World {
 		let dy = this.player.ejeY
 		this.ctx.drawImage(this.player.animationImage, sx, sy, sFrameSize, sFrameSize, dx, dy, sFrameSize, sFrameSize)
 	}
-
-// TODAVIA NO LAS PUDE HACER ANDAR - ES PARA HACER LA ANIMACION
-
 }
 
 // Swal.fire({

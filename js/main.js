@@ -8,8 +8,10 @@ let update = function() {
 let engine = new Engine(1000/30, update)
 
 document.addEventListener('keydown', (ev) => {
-	display.player.movePlayer(ev)
+	display.player.getInput(ev)
+})
+document.addEventListener('keyup', (ev) => {
+	display.player.getInput(ev)
 })
 
 engine.start()
-console.log("osfdkñ")
