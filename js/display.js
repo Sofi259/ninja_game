@@ -54,7 +54,7 @@ class World {
 		let sFrameSize = 72
 		let dx = this.player.ejeX
 		let dy = this.player.ejeY
-		this.ctx.drawImage(this.player.animationImage, sx, sy, sFrameSize, sFrameSize, dx, dy, sFrameSize, sFrameSize)
+		this.ctx.drawImage(this.player.animationImage, sx, sy, sFrameSize, sFrameSize, dx, dy, this.player.width, this.player.height)
 	}
 }
 

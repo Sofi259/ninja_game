@@ -1,5 +1,5 @@
 const canvas = document.getElementById('canvas')
-let player = new Player(50, 600, 30, 60)
+let player = new Player(50, 600, 72, 72)
 let display = new World(canvas, 1200, 800, player)
 let update = function() {
 	display.update()
