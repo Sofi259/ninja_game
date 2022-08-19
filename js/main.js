@@ -12,3 +12,4 @@ document.addEventListener('keydown', (ev) => {
 })
 
 engine.start()
+console.log("osfdkñ")

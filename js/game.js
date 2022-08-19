@@ -4,11 +4,17 @@ class Player {
 		this.ejeY = ejeY
 		this.width = width
 		this.height = height
-		this.speed = 5
+
+		this.left = {active:false, down:false}
+		this.right = {active:false, down:false}
+		this.up = {active:false, down:false}
+
+		this.speed = 6
 		this.velocity_x = 0
-		this.velocity_y = 0	
+		this.velocity_y = 0
 		this.jump = 50
 		this.jumping = true
+
 		this.animationImage = new Image()
 		this.animationImage.src = 'assets/blue_spritesheet-export.png'
 		this.animationFrames = [
@@ -28,30 +34,40 @@ class Player {
 		  }
 		this.actualAnimationFrameSet = this.animationFrameSet["idle-right"]
 	}
-	movePlayer(e) {
-		if (e.type == 'keydown') {
-			switch (e.keyCode) {
-				case 37:
-					this.velocity_x -= this.speed
-					break;
-				case 39:
-					this.velocity_x += this.speed
-					break;
-				case 32:
-					if (!this.jumping) {
-						this.velocity_y -= this.jump
-						this.jumping = true
-					}
-					break;
-			}
+	getInput(e) {
+		let direction
+		let down = (e.type == 'keydown')
+		
+		switch (e.keyCode) {
+			case 37:
+				direction = this.left
+				break;
+			case 39:
+				direction = this.right
+				break;
+			case 32:
+				direction = this.up
+				break;
+		}
+		if(direction.down != down) this.direction.active = down
+			this.direction.down = down
+	}
+	moveLeft() {this.velocity_x -= this.speed}
+	moveRight() {this.velocity_x += this.speed}
+	moveUp() {
+		if (!this.jumping) {
+			this.velocity_y -= this.jump
+			this.jumping = true
 		}
 	}
 	update() {
+		if (this.left.active) {this.moveLeft}
+		if (this.right.active) {this.moveRight}
+		if (this.up.active) {this.moveUp}
 		this.ejeX += this.velocity_x
 		this.ejeY += this.velocity_y
 	}
 }
-
 class Frame {
 	constructor(x, y, width, height){
 		this.x = x
@@ -60,3 +76,43 @@ class Frame {
 		this.height = height
 	}
 }
+
+
+
+
+	
+	// animator(animationFrameSet, delay) {
+	//   this.count = 0
+	//   this.delay = (delay >= 1) ? delay : 1
+	//   this.animationFrameSet = animationFrameSet
+	//   this.frameIndex = 0
+	//   this.frameValue = animationFrameSet[0]
+	//   this.mode = "pause"
+	// }
+	// animate() {
+	// 	switch(this.mode) {
+	// 		case "loop" : this.loop()
+	// 		break;
+	// 		case "pause" :
+	// 		break;
+	// 	}
+	// }
+	// changeFrameSet(animationFrameSet, mode, delay = 10, frameIndex = 0) {
+	// 	if(this.animationFrameSet === animationFrameSet) { return; }
+
+	// 	this.count = 0
+	//   	this.delay = delay
+	//   	this.animationFrameSet = animationFrameSet
+	//   	this.frameIndex = frameIndex
+	//   	this.frameValue = frameValue[frameIndex]
+	//   	this.mode = mode
+	// }
+	// loop() {
+	// 	this.count ++
+
+	// 	while(this.count > this.delay) {
+	// 		this.count -= this.delay
+	// 		this.frameIndex = (this.frameIndex < this.animationFrameSet.length - 1) ? this.frameIndex + 1 : 0
+	// 		this.frameValue = this.animationFrameSet[this.frameIndex]
+	// 	}
+	// }
