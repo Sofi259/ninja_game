@@ -101,10 +101,13 @@ class Player {
 		else if (this.velocity_x < -1) this.changeFrameSet(this.animationFrameSet ["move-left"], 6)
 
 		else if (this.velocity_x > -1 && this.velocity_x < 1) this.changeFrameSet(this.animationFrameSet ["idle-right"], 6)
-		else if (this.velocity_x < -1 && this.velocity_x > 1) this.changeFrameSet(this.animationFrameSet ["idle-left"], 6)
+		else if (this.velocity_x < 1 && this.velocity_x > -1) this.changeFrameSet(this.animationFrameSet ["idle-left"], 6)
 
-		else if (this.velocity_y < -1) this.changeFrameSet(this.animationFrameSet ["jumping-right"], 6)
+		else if (this.velocity_y < -1) this.changeFrameSet(this.animationFrameSet ["jump-right"], 6)
 		else if (this.velocity_y > 1) this.changeFrameSet(this.animationFrameSet ["fall-right"], 6)
+
+		else if (this.velocity_y > 1) this.changeFrameSet(this.animationFrameSet ["jump-left"], 6)
+		else if (this.velocity_y < -1) this.changeFrameSet(this.animationFrameSet ["fall-left"], 6)
 
 		else if (this.velocity_y > -1 && this.velocity_y < 1) this.changeFrameSet(this.animationFrameSet ["floating-right"], 6)
 	}
