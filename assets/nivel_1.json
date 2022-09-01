@@ -118,19 +118,19 @@
                  "name":"",
                  "rotation":0,
                  "visible":true,
-                 "width":15.3333333333333,
+                 "width":15.3333,
                  "x":208,
-                 "y":183.666666666667
+                 "y":183.667
                 }, 
                 {
                  "class":"",
-                 "height":8.66666666666666,
+                 "height":8.66667,
                  "id":6,
                  "name":"",
                  "rotation":0,
                  "visible":true,
                  "width":287,
-                 "x":224.333333333333,
+                 "x":224.333,
                  "y":200
                 }, 
                 {
@@ -183,14 +183,14 @@
          "objects":[
                 {
                  "class":"",
-                 "height":31.6363636363636,
+                 "height":31.6364,
                  "id":4,
                  "name":"",
                  "rotation":0,
                  "visible":true,
-                 "width":16.3636363636364,
+                 "width":16.3636,
                  "x":608,
-                 "y":80.1818181818182
+                 "y":80.1818
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -202,7 +202,7 @@
          "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 590, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 589, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -231,14 +231,14 @@
          "objects":[
                 {
                  "class":"",
-                 "height":10.5454545454545,
+                 "height":10.5455,
                  "id":3,
                  "name":"",
                  "rotation":0,
                  "visible":true,
-                 "width":10.3636363636364,
-                 "x":370.909090909091,
-                 "y":52.1818181818182
+                 "width":10.3636,
+                 "x":370.909,
+                 "y":52.1818
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -326,7 +326,7 @@
         {
          "columns":9,
          "firstgid":1,
-         "image":"..\/..\/..\/..\/tiles\/Tall Forest Files\/Layers\/back.png",
+         "image":"..\/tiled\/back.png",
          "imageheight":240,
          "imagewidth":144,
          "margin":0,
@@ -339,7 +339,7 @@
         {
          "columns":11,
          "firstgid":136,
-         "image":"..\/..\/..\/..\/tiles\/Tall Forest Files\/Layers\/far.png",
+         "image":"..\/tiled\/far.png",
          "imageheight":240,
          "imagewidth":176,
          "margin":0,
@@ -352,7 +352,7 @@
         {
          "columns":12,
          "firstgid":301,
-         "image":"..\/..\/..\/..\/tiles\/Tall Forest Files\/Layers\/middle.png",
+         "image":"..\/tiled\/middle.png",
          "imageheight":240,
          "imagewidth":192,
          "margin":0,
@@ -365,7 +365,7 @@
         {
          "columns":7,
          "firstgid":481,
-         "image":"..\/..\/..\/..\/tiles\/Tall Forest Files\/Layers\/tileset.png",
+         "image":"..\/tiled\/tileset.png",
          "imageheight":144,
          "imagewidth":112,
          "margin":0,
@@ -378,7 +378,7 @@
         {
          "columns":9,
          "firstgid":544,
-         "image":"..\/..\/..\/..\/tiles\/Ningriptzu Art\/tilesheetv1mini.png",
+         "image":"..\/tiled\/tilesheetv1mini.png",
          "imageheight":80,
          "imagewidth":150,
          "margin":0,
@@ -391,20 +391,7 @@
         {
          "columns":1,
          "firstgid":589,
-         "image":"..\/..\/..\/..\/tiles\/Ningriptzu Art\/Misc\/spr_star_0.png",
-         "imageheight":16,
-         "imagewidth":16,
-         "margin":0,
-         "name":"spr_star_0",
-         "spacing":0,
-         "tilecount":1,
-         "tileheight":16,
-         "tilewidth":16
-        }, 
-        {
-         "columns":1,
-         "firstgid":590,
-         "image":"..\/..\/..\/..\/tiles\/Ningriptzu Art\/Riceball\/sushi3.png",
+         "image":"..\/tiled\/sushi3.png",
          "imageheight":16,
          "imagewidth":16,
          "margin":0,
