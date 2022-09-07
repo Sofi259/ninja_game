@@ -1,0 +1,59 @@
+{
+  "id":"00",
+
+  "background": "assets/levels/backgrounds/nivel_0.png",
+
+  "columns": 40,
+  "rows": 15,
+
+  "width": 640,
+  "height": 240,
+
+  "gridSize": 16,
+
+  "plataforms":[
+    {"x": 0, "y": 8, "w": 13, "h": 7},
+    {"x": 13, "y": 12, "w": 1, "h": 3},
+    {"x": 14, "y": 13, "w": 18, "h": 2},
+    {"x": 32, "y": 11, "w": 1, "h": 4},
+    {"x": 33, "y": 7, "w": 7, "h": 8},
+    {"x": 20, "y": 4, "w": 6, "h": 2}
+  ],
+
+  "collectables":[
+    {"img":"assets/levels/collectables/onigiri.png","x": 15, "y": 4},
+    {"img":"assets/levels/collectables/onigiri.png","x": 21, "y": 3},
+    {"img":"assets/levels/collectables/onigiri.png","x": 22, "y": 3},
+    {"img":"assets/levels/collectables/onigiri.png","x": 23, "y": 3}
+  ],
+
+  "spikes":[
+    {"img":"assets/levels/spikes/spike.png","x": 13, "y": 11},
+    {"img":"assets/levels/spikes/spike.png","x": 14, "y": 12},
+    {"img":"assets/levels/spikes/spike.png","x": 15, "y": 12},
+    {"img":"assets/levels/spikes/spike.png","x": 16, "y": 12},
+    {"img":"assets/levels/spikes/spike.png","x": 17, "y": 12},
+    {"img":"assets/levels/spikes/spike.png","x": 18, "y": 12},
+    {"img":"assets/levels/spikes/spike.png","x": 19, "y": 12},
+    {"img":"assets/levels/spikes/spike.png","x": 20, "y": 12},
+    {"img":"assets/levels/spikes/spike.png","x": 21, "y": 12},
+    {"img":"assets/levels/spikes/spike.png","x": 22, "y": 12},
+    {"img":"assets/levels/spikes/spike.png","x": 23, "y": 12},
+    {"img":"assets/levels/spikes/spike.png","x": 24, "y": 12},
+    {"img":"assets/levels/spikes/spike.png","x": 25, "y": 12},
+    {"img":"assets/levels/spikes/spike.png","x": 26, "y": 12},
+    {"img":"assets/levels/spikes/spike.png","x": 27, "y": 12},
+    {"img":"assets/levels/spikes/spike.png","x": 28, "y": 12},
+    {"img":"assets/levels/spikes/spike.png","x": 29, "y": 12},
+    {"img":"assets/levels/spikes/spike.png","x": 30, "y": 12},
+    {"img":"assets/levels/spikes/spike.png","x": 31, "y": 12},
+    {"img":"assets/levels/spikes/spike.png","x": 32, "y": 10}
+  ],
+
+  "doors": [
+    {"x": 38, "y": 5, "w":1, "h":2, "next_lvl": "nivel_1.json"}
+  ],
+
+  "player_x": 0,
+  "player_y": 5
+}
